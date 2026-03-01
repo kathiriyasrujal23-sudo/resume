@@ -1,0 +1,230 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* ===== Navbar ===== */
+header {
+    width: 100%;
+    background: #111;
+    padding: 15px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00adb5;
+}
+
+/* ===== Mobile Menu ===== */
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ===== Sections ===== */
+section {
+    padding: 100px 8%;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* ===== Hero Section ===== */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.home-content h1 {
+    font-size: 45px;
+}
+
+.home-content span {
+    color: #00adb5;
+}
+
+.typing {
+    color: #00adb5;
+    font-weight: 600;
+}
+
+.home-img img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* ===== About ===== */
+#about p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* ===== Skills ===== */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Projects ===== */
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* ===== Contact ===== */
+form {
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #00adb5;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008c94;
+}
+
+/* ===== Scroll Reveal ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Scroll To Top ===== */
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #00adb5;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-top.show {
+    display: block;
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background: #111;
+        width: 200px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 250px;
+        margin-top: 20px;
+    }
+}
