@@ -2,136 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SRUJAL KATHIRIYA - IT Resume</title>
+    <title>Kathiriya srujal | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f8;
-        }
 
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: #ffffff;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        h1 {
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
-
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .contact {
-            margin-bottom: 20px;
-        }
-
-        .contact span {
-            display: block;
-        }
-
-        .skills ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-
-        .project {
-            margin-bottom: 15px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
-            color: gray;
-        }
-
-        @media(max-width: 768px) {
-            .container {
-                width: 95%;
-                padding: 15px;
-            }
-        }
-    </style>
+    <!-- Font Awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
-<div class="container">
-
-    <h1>KATHIRIYA SRUJAL</h1>
-    <div class="contact">
-        <span>Email: kathiriyasrujal23@email.com</span>
-        <span>Phone: +91 7573931978</span>
-        <span>LinkedIn: linkedin.com/in/kathiriyasrujal</span>
-        <span>GitHub: github.com/srujal</span>
-    </div>
-
-    <h2>Career Objective</h2>
-    <p>
-        Motivated IT professional with strong knowledge of software development, 
-        web technologies, and problem-solving skills. Seeking an opportunity 
-        to contribute technical expertise and grow within a dynamic organization.
-    </p>
-
-    <h2>Education</h2>
-    <p><strong>Bachelor of Technology (B.Tech) in Information Technology</strong><br>
-       DHARMASINH DESAI UNIVERSITY<br>
-       Year: 2025 - 2029</p>
-
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <ul>
-            <li>Programming: C, C++, Java, Python</li>
-            <li>Web: HTML, CSS, JavaScript</li>
-            <li>Database: MySQL</li>
-            <li>Tools: Git, VS Code</li>
+<!-- ===== Header ===== -->
+<header>
+    <nav>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- ===== Home Section ===== -->
+<section id="home">
+    <div class="home-content reveal">
+        <h1>Hello, I'm <span>Your Name</span></h1>
+        <h3>I am a <span class="typing"></span></h3>
+        <p>A passionate developer building modern and responsive web applications.</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Hire Me
+        </button>
     </div>
 
-    <h2>Projects</h2>
+    <div class="home-img reveal">
+        <img src="https://via.placeholder.com/350" alt="Profile Image">
+    </div>
+</section>
 
-    <div class="project">
-        <strong>Project 1: Online Shopping Website</strong>
-        <p>Developed an e-commerce website using HTML, CSS, JavaScript and MySQL.</p>
+<!-- ===== About Section ===== -->
+<section id="about">
+    <h2 class="reveal">About Me</h2>
+    <p class="reveal">
+        I am a creative and detail-oriented web developer with experience in building
+        responsive and user-friendly websites. I enjoy solving problems and learning
+        new technologies to improve my skills.
+    </p>
+</section>
+
+<!-- ===== Skills Section ===== -->
+<section id="skills">
+    <h2 class="reveal">My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-box reveal">HTML</div>
+        <div class="skill-box reveal">CSS</div>
+        <div class="skill-box reveal">JavaScript</div>
+        <div class="skill-box reveal">React</div>
+        <div class="skill-box reveal">Node.js</div>
+        <div class="skill-box reveal">UI/UX Design</div>
+    </div>
+</section>
+
+<!-- ===== Projects Section ===== -->
+<section id="projects">
+    <h2 class="reveal">Projects</h2>
+
+    <div class="project-card reveal">
+        <h3>Project One</h3>
+        <p>Responsive portfolio website built using HTML, CSS, and JavaScript.</p>
     </div>
 
-    <div class="project">
-        <strong>Project 2: Student Management System</strong>
-        <p>Created a Java-based application to manage student records efficiently.</p>
+    <div class="project-card reveal">
+        <h3>Project Two</h3>
+        <p>Dynamic web application with modern UI and interactive features.</p>
     </div>
 
-    <h2>Certifications</h2>
-    <p>✔ Web Development Certification<br>
-       ✔ Python Programming Certification</p>
-
-    <h2>Strengths</h2>
-    <p>✔ Quick Learner<br>
-       ✔ Team Player<br>
-       ✔ Problem Solving Skills</p>
-
-    <div class="footer">
-        © 2026 Kathiriya Srujal | IT Professional
+    <div class="project-card reveal">
+        <h3>Project Three</h3>
+        <p>Full-stack application with authentication and database integration.</p>
     </div>
+</section>
 
+<!-- ===== Contact Section ===== -->
+<section id="contact">
+    <h2 class="reveal">Contact Me</h2>
+
+    <form id="contact-form" class="reveal">
+        <input type="text" id="name" placeholder="KATHIRIYA SRUJAL">
+        <input type="email" id="email" placeholder="kathiriyasrujal23@gmail.com">
+        <textarea id="message" rows="5" placeholder="NULL"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- ===== Scroll To Top Button ===== -->
+<div class="scroll-top">
+    ↑
 </div>
 
+<!-- JS -->
+<script src="script.js"></script>
+
 </body>
-
 </html>
-
